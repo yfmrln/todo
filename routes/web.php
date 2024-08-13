@@ -15,14 +15,6 @@ use App\Http\Controllers\TodoController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
-// Route::get('/', function () {
-//     return view('index');
-// });
-
 // 初期画面
 Route::get('/', [TodoController::class, 'index'])->name('list');
 // 今日のタスク画面

@@ -20,13 +20,6 @@ class TodoController extends Controller
      */
     public function index()
     {
-        //$photos = Todos::all();
-
-        // return view('index', [
-        //     'photos' => $photos,
-        // ]);
-        // return view('index');
-
         $todos = $this->todo->findAllTodos();
         return view('index', compact('todos'));
     }
