@@ -1,0 +1,229 @@
+body {
+    height: 100%;
+    width: 100%;
+    font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+  }
+  /* ヘッダー */
+  header {
+    background-color: #55bf6f;
+    height: 40px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  /* メイン */
+  main {
+    height: calc(100vh - 70px);
+    left: 0;
+    margin: 0;
+    position: fixed;
+    top: 40px;
+    width: 100%;
+    display: flex;
+  }
+  /* サイドメニュー */
+  .side_menu {
+    order: 1;
+    width: 200px;
+    height: 100%;
+    background-color: #e0ffd9;
+    position: absolute;
+  }
+  
+  .side_menu > ul {
+    list-style: none;
+    /* margin-top: 80px; */
+    padding: 0;
+  }
+  
+  .side_menu > ul > li {
+    padding: 10px 10px;
+    /* border-bottom: 1px dotted #000; */
+  }
+  
+  .side_menu > ul > li:hover {
+    color: #FFF;
+    background-color: #55bf6f;
+    text-decoration: underline;
+  }
+
+  .side_menu > ul > li > a {
+    vertical-align: super;
+    vertical-align: super;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  /* アイコン */
+  .icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+  }
+
+  .icon_new {
+    background: url("../icon/new.png")  no-repeat; 
+    background-size: 24px;
+  }
+  .icon_search {
+    background: url("../icon/search.png")  no-repeat; 
+    background-size: 24px;
+  }
+  .icon_list {
+    background: url("../icon/list.png")  no-repeat; 
+    background-size: 24px;
+  }
+  .icon_today {
+    background: url("../icon/today.png")  no-repeat; 
+    background-size: 24px;
+  }
+  .icon_complete {
+    background: url("../icon/complete.png")  no-repeat; 
+    background-size: 24px;
+  }
+
+  /* メインコンテンツ */
+  .main_contents{
+    order: 2;
+    width: calc(100% - 200px);
+    height: 100%;
+    overflow: scroll;
+    position: absolute;
+    left: 200px;
+    display: flex;
+  
+  }
+  /* 見出し */
+  h1 {
+    margin: 3px 5px;
+    color: #FFF;
+  }
+  /* テーブル */
+  table {
+    border-collapse: collapse;
+    border: solid 2px #55bf6f;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  
+  }
+  
+  table th, table td {
+    border: dashed 1px #55bf6f;
+  }
+  /* 大問幅固定 */
+  .th1 {
+    width: 300px;
+  }
+  /* 小問幅固定 */
+  .th2 {
+    width: 180px;
+  }
+  
+  .change_ul {
+    position: relative;
+    margin: 50px;
+    border: 3px solid #e0ffd9;
+    border-radius: 15px;
+    width: 600px;
+    /* padding-left: 0; */
+  }
+  .change_ul li {
+    list-style:none;
+  }
+  .change_ul li input,
+  .change_ul li select,
+  .change_ul li textarea {
+    border: 1px solid #55bf6f;;
+    font-size: 18px;
+  }
+  .change_ul li input[type="text"]{
+    height: 30px;
+    width: 300px;
+  }
+  .change_ul button {
+    width: 60px;
+    height: 40px;
+    margin: 20px 0;
+  }
+  li.label {
+    margin: 20px 0 5px 0;
+  }
+  /* #end-time {
+    display: none;
+  } */
+
+  /* Todo 一覧  */
+  .todos {
+    border-collapse: collapse;
+    border: solid 2px #55bf6f;
+    border-radius: 5px;
+    width: 400px;
+    margin: 20px 50px 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+  }
+
+  input[name="status"]{
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  .title {
+    width: 340px;
+    margin: 5px;
+    font-size: 26px;
+    font-weight: bold;
+  }
+  .categories {
+    width: 400px;
+  }
+  .categories > span {
+    background-color: #e0ffd9;
+    padding: 3px 5px;
+    margin-left: 5px;;
+    border-radius: 10px;
+    color: #55bf6f;
+  }
+  .date {
+    width: 400px;
+    margin: 5px;
+    font-size: 14px;
+    text-align: right;
+
+  }
+
+  /* 詳細表示用 */
+  .detail_ul {
+      border: 1px dotted #000;
+      padding: 20px;
+      display: none;
+      width: 400px;
+  }
+  .detail_ul li {
+    list-style:none;
+    color: #c5c5c5
+  }
+  .detail_ul li span {
+    color: #000;
+    font-size: 18px;
+  }
+  li.label {
+    margin: 20px 0 5px 0;
+  }
+
+  /* フッター */
+  footer {
+    background-color: #55bf6f;
+    bottom: 0;
+    height: 30px;
+    left: 0;
+    position: fixed;
+    width: 100%;
+  }
+  
