@@ -4,8 +4,6 @@
 @section('main_content')
     <div>
         @foreach($todos as $todo)
-        <!-- <form method="POST" action="/update-status">
-            @csrf -->
             <div class="todos" data-id="{{ $todo->id }}">
                 <input type="checkbox" name="status" class="status_check" {{ $todo->status == '完了' ? 'checked' : '' }} >
                 <div class="title">{{ $todo->title }}</div>
@@ -24,7 +22,6 @@
                     @endif
                 </div>
             </div>
-        <!-- </form> -->
         @endforeach
     </div>
 
