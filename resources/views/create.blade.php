@@ -22,7 +22,7 @@
         </li>
         <li class="label">詳細</li>
         <li>
-            <textarea name="description" id="" cols="50" rows="10"></textarea>
+            <textarea name="description" id="description" cols="50" rows="10"></textarea>
         </li>
         <li class="label">場所</li>
         <li><input type="text" name="place"></li>
@@ -37,6 +37,15 @@
         <li class="label">カテゴリ</li>
         <li>
             <input type="text" name="categories">
+        </li>
+        <li class="label">ステータス</li>
+        <li>
+            <select name="priority" id="priority">
+            　　<option value=""></option>
+                <option value="高">高</option>
+                <option value="中">中</option>
+                <option value="低">低</option>
+            </select>
         </li>
         <li>
             <button type="submit">登録</button>

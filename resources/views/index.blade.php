@@ -12,6 +12,17 @@
                     <span>{{ $todo->categories }}</span>
                     @endif
                 </div>
+                @if( $todo->priority != "" )
+                    <span class="priority"><small>優先度</small>： 
+                        <span class="
+                            @if($todo->priority === '高') 
+                                text-red 
+                            @elseif($todo->priority === '低') 
+                                text-blue 
+                            @endif
+                        ">{{ $todo->priority }}</span>
+                    </span>
+                @endif
                 <div class="date">
                     @if($todo->is_all_day)
                     {{ Carbon\Carbon::parse($todo->start_date)->format('Y/m/d') }} 終日
@@ -39,6 +50,8 @@
             <li><span id="place"></span></li>
             <li class="label">カテゴリ</li>
             <li><span id="categories"></span></li>
+            <li class="label">優先度</li>
+            <li><span id="priority"></span></li>
         </ul>
     </div>
 

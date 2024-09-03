@@ -190,6 +190,16 @@ body {
     border-radius: 10px;
     color: #55bf6f;
   }
+  .priority{
+    margin-top:10px;
+  }
+  .text-red {
+    color: red;
+  }
+
+  .text-blue {
+      color: blue;
+  }
   .date {
     width: 400px;
     margin: 5px;

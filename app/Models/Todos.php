@@ -32,6 +32,7 @@ class Todos extends Model
         'description',
         'status',
         'is_all_day',
+        'priority',
     ];
 
     /**
@@ -92,6 +93,7 @@ class Todos extends Model
             'end_time'    => $request->has('all_day') ? null : $request->end_time,
             'place'       => $request->place,
             'description' => $request->description,
+            'priority'    => $request->priority,
             'status'      => "予定",
             'user_id'     => 1,
         ]);

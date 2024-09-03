@@ -35,6 +35,7 @@ $(document).ready(function() {
                   $('#description').text(data.description);
                   $('#place').text(data.place);
                   $('#categories').text(data.categories);
+                  $('#priority').text(data.priority);
                   if(data.is_all_day === 1) {
                     $('#start-date').text(data.start_date.replace(/-/g, '/') + " 終日");
                     // $('#end-date-label').hide();

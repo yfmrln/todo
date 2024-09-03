@@ -28,6 +28,7 @@ return new class extends Migration
             $table->foreign('user_id')->references('id')->on('users'); # 外部キー制約をつける
             $table->timestamps();
             $table->boolean('is_all_day')->default(false);
+            $table->string('priority')->nullable();
         });
     }
 
